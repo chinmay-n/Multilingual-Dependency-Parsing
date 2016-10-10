@@ -63,10 +63,9 @@ class FeatureExtractor(object):
 
         global printed
         if not printed:
-            print("This is not a very good feature extractor!")
             printed = True
 
-        # taking random example set of features:
+        # an example set of features:
         if stack:
             stack_idx0 = stack[-1]
             token = tokens[stack_idx0]

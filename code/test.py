@@ -1,4 +1,5 @@
 import random
+
 from providedcode import dataset
 from providedcode.transitionparser import TransitionParser
 from providedcode.evaluate import DependencyEvaluator
@@ -16,7 +17,7 @@ if __name__ == '__main__':
         tp.save('swedish.model')
 
         testdata = dataset.get_swedish_test_corpus().parsed_sents()
-        tp = TransitionParser.load('badfeatures.model')
+        tp = TransitionParser.load('swedish.model')
 
         parsed = tp.parse(testdata)
 
